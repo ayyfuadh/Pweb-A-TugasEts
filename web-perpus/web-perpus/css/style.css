@@ -1,0 +1,14 @@
+.headerbawah {
+  padding: 10px 0 0 10px;
+  text-align: center;
+  background-image: url(../img/ini.jfif);
+}
+
+.headerbawah h1 {
+  font-size: 60px;
+  color: #fff;
+  padding-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: bold;
+  text-align: center;
+}

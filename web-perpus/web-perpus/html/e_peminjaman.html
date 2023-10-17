@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG Perpus | Peminjaman</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+     
+    
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+
+      
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      </style>
+      <link href="c_index_headers.css" rel="stylesheet">
+      <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Headers-->
+    <div id="container">
+        <div class="headerbawah"><h1>BOOK EDUCATION</h1>
+    </div>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="a_opener.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="../img/logo.png" weight="35" height="35">
+            <span class="fs-4">BOOK EDUCATION</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="c_index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="d_buku.html" class="nav-link">Buku</a></li>
+            <li class="nav-item"><a href="e_peminjaman.html" class="nav-link active" aria-current="page">Peminjaman</a></li>
+            <li class="nav-item"><a href="f_pengembalian.html" class="nav-link">Pengembalian</a></li>
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                User
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="c_index.html">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="b_signin.html">Logout</a>
+                </li>
+                <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+              </ul>
+            </div>
+          </ul>
+        </header>
+    </div>
+    <!--Akhir Headers-->
+
+    <!--Form Pengembalian-->
+    <div class="container" align="center">
+      <main>
+        <div class="py-5 text-center">
+          <h2>Form Peminjaman</h2>
+          <p class="lead"></p>
+        </div>
+    
+        <div class="col-md-7 col-lg-8">
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-12 text-start">
+                <label for="username" class="form-label">NIK <span class="text-muted">(Wajib diisi)</span></label>
+                <input type="text" class="form-control" id="email" placeholder="0xxx1">
+                <div class="invalid-feedback">
+                  Harap masukkan NIK !
+                </div>
+              </div> 
+
+              <div class="col-12 text-start">
+                <label for="username" class="form-label">Nama <span class="text-muted">(Wajib diisi)</span></label>
+                <input type="text" class="form-control" id="email" placeholder="0xxx1">
+                <div class="invalid-feedback">
+                  Harap masukkan Nama !
+                </div>
+              </div> 
+    
+              <div class="col-12 text-start">
+                <label for="address" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="address" placeholder="Jl. xxx, No. xx - - - " required="">
+                <div class="invalid-feedback">
+                  Harap masukkan alamat dengan benar.
+                </div>
+              </div>
+
+              <div class="col-12 text-start">
+                <label for="address" class="form-label">Nomor Telepon</label>
+                <input type="text" class="form-control" id="address" placeholder="08xx xxxx xxxx" required="">
+                <div class="invalid-feedback">
+                  Harap masukkan Nomor Telepon dengan benar.
+                </div>
+              </div>
+
+              <div class="col-12 text-start">
+                <label for="country" class="form-label">Judul Buku</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Silahkan pilih...</option>
+                  <option>Ponny's World</option>
+                  <option>Perspektif Pendidikan dalam Bingkai Ilmu dan Tokoh</option>
+                  <option>Pelakor</option>
+                  <option>Menanti Restu Langit</option>
+                  <option>Digital Marketing melalui Aplikasi Playstore</option>
+                  <option>Psikologi Pendidikan</option>
+                  <option>Manajemen Sumber Daya Manusia</option>
+                  <option>Hukum Perdata</option>
+                  <option>Kesehatan Masyarakat Pesisir dan Kelautan</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <div class="col-12 text-start">
+                <label for="address" class="form-label">Tanggal Peminjaman</label>
+                <input type="datetime-local" class="form-control" id="address">
+                <div class="invalid-feedback">
+                  Pilih tanggal peminjaman
+                </div>
+              </div>
+
+              <div class="col-12 text-start">
+                <label for="address" class="form-label">Tanggal Pengembalian</label>
+                <input type="datetime-local" class="form-control" id="address">
+                <div class="invalid-feedback">
+                  Pilih tanggal pengembalian
+                </div>
+              </div>
+
+              <!--
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              
+    
+              <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              -->
+            </div>
+    
+            <hr class="my-4">
+
+            <button onclick="myalert() " class="w-100 btn btn-primary btn-lg" type="submit"><a style="color:aliceblue" href="#">Lanjutkan</a></button>
+   
+            <script> 
+                 function myalert() { 
+                      alert("Selamat, data anda telah terinput."); 
+                 } 
+            </script>
+          </form>
+        </div>
+      </main>
+    <!--Akhir Form Pengembalian-->
+
+    <!--Footer-->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="a_opener.html" class="nav-link px-2 text-muted">BOOK EDUCATION</a></li>
+        <li class="nav-item"><a href="h_contactus.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-muted"></p>
+    </footer>
+  </div>
+  <!--Akhir Footer-->
+</body>
+</html>
